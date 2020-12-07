@@ -45,7 +45,6 @@ nav {
 }
 .page-header {
   display: flex;
-  width: 1170px;
   align-items: center;
   list-style: none;
 }
