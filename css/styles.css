@@ -97,7 +97,7 @@ nav {
 }
 .logo-continuation {
   color: var(--black-color);
-  font-family: Oleo script, sans-serif;
+  font-family: Raleway, sans-serif;;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -387,7 +387,7 @@ h2,
 }
 .logo-continuation-conclusion {
   color: var(--white-color);
-  font-family: Oleo script, sans-serif;
+  font-family: Raleway, sans-serif;;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.38;
@@ -409,20 +409,20 @@ h2,
   font-size: 14px;
   line-height: 1.71;
 }
-.appeal {
-  display: block;
-  flex-wrap: wrap;
+.appeal-title {
+  text-transform: uppercase;
 }
 .appeal-name {
   color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
+  font-size: 14px;
 }
 .header-line {
   border-bottom: 1px solid #ececec;
 }
 .conteiner-portfolio {
-  width: 1200px;
+  width: 1170px;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -491,7 +491,7 @@ li {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image-portfolio:nth-child(3n) {
