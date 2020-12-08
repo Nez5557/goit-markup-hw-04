@@ -43,14 +43,19 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
+/* Чем мы занимаемся */
 .page-header {
   display: flex;
   align-items: center;
   list-style: none;
+  margin-top: 59px;
 }
-.text {
+.page-header li + li {
+  margin-left: 30px;
+}
+/* .text {
   margin-right: 30px;
-}
+} */
 .contacts {
   margin-left: auto;
 }
@@ -233,13 +238,12 @@ h2,
   font-size: 36px;
   line-height: 1.17;
 }
-.image {
+/* .image {
   display: block;
-  max-width: 100%;
-  height: auto;
+  align-items: center;
   margin-left: 30px;
   margin-top: 59px;
-}
+} */
 .work {
   width: 1170px;
   height: 648px;
