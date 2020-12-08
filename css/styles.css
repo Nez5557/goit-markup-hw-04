@@ -235,9 +235,10 @@ h2,
 }
 .image {
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: 30px;
   margin-top: 59px;
-  margin-right: 30px;
-  align-items: center;
 }
 .work {
   width: 1170px;
@@ -448,6 +449,8 @@ li {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image-portfolio:nth-child(3n) {
   margin-right: 0px;
@@ -459,9 +462,9 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 6%;
-  padding-top: 30px;
-  padding-bottom: 25px;
   margin-left: 24px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .description-name {
   color: var(--primary-text-color);
