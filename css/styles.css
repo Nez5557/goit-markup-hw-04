@@ -315,6 +315,9 @@ h2,
   justify-content: center;
   /* border-radius: 50%; */
 }
+.icon-list:not(:last-child) {
+  margin-right: 10px;
+}
 .icon-list :hover {
   color: #fff;
   background-color: #2196f3;
