@@ -410,11 +410,8 @@ h2,
   line-height: 1.71;
 }
 .appeal {
-  display: inline-flex;
+  display: block;
   flex-wrap: wrap;
-  vertical-align: top;
-  width: 206px;
-  height: 80px;
 }
 .appeal-name {
   color: var(--white-color);
