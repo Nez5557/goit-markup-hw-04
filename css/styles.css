@@ -5,6 +5,11 @@
 a {
   text-decoration: none;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /* Цвет основного текста #757575; */
 /* Вторичный цвет текста #212121; */
 /* Белый #FFFFFF; */
@@ -47,6 +52,7 @@ nav {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid red;
 }
 /* Чем мы занимаемся */
 .page-header {
@@ -295,14 +301,26 @@ h2,
   background-color: var(--white-color);
   color: var(--primary-text-color);
   font-weight: 400;
-  padding-bottom: 30px;
 }
-.icon-social-networks {
-  fill: #afb1b8;
-  margin-right: 10px;
+.icon-social {
+  display: flex;
+  margin-top: 16px;
+}
+.icon-list {
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
   display: inline-flex;
   text-align: center;
   justify-content: center;
+  border-radius: 50%;
+}
+.icon-social-networks {
+  fill: #afb1b8;
+  /* margin-right: 10px; */
+  /* display: inline-flex;
+  text-align: center;
+  justify-content: center; */
 }
 .icon-social-networks :hover {
   fill: #2196f3;
@@ -319,9 +337,7 @@ h2,
 .clients-list {
   display: flex;
   align-items: center;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 .clients-item {
   list-style: none;
