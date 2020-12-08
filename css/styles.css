@@ -3,6 +3,7 @@
   padding: 0;
 }
 a {
+  display: block;
   text-decoration: none;
 }
 ul {
@@ -57,7 +58,7 @@ nav {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 /* Чем мы занимаемся */
 .page-header {
@@ -68,9 +69,6 @@ nav {
 .page-header li + li {
   margin-left: 30px;
 }
-/* .text {
-  margin-right: 30px;
-} */
 .contacts {
   margin-left: auto;
 }
@@ -102,7 +100,7 @@ nav {
 }
 .logo-continuation {
   color: var(--black-color);
-  font-family: Raleway, sans-serif;;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -224,16 +222,6 @@ nav {
 .about {
   padding-bottom: 94px;
 }
-/* .about,
-h2,
-.description {
-  text-align: center;
-  align-items: center;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-} */
 .description {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -253,6 +241,7 @@ h2,
   border-radius: 4px;
   margin-bottom: 30px;
 }
+/* Наша команда */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -263,16 +252,6 @@ h2,
   font-size: 36px;
   line-height: 1.17;
 }
-/* .image {
-  display: block;
-  align-items: center;
-  margin-left: 30px;
-  margin-top: 59px;
-} */
-/* .work {
-  text-align: center;
-  box-sizing: border-box;
-} */
 .box {
   background-color: var(--white-color);
   width: 270px;
@@ -281,15 +260,18 @@ h2,
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.content-box {
+  padding: 5px 5px;
+}
 .our-people {
+  margin: 0;
+  padding: 0;
   display: flex;
   text-align: center;
   align-items: center;
   font-size: 16px;
   line-height: 1.19;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .our-people li + li {
   margin-left: 30px;
@@ -297,56 +279,36 @@ h2,
 .our-team {
   color: var(--title-text-color);
   font-weight: 500;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  align-items: center;
-  text-align: center;
+  padding-top: 20px;
 }
 .profession {
   background-color: var(--white-color);
   color: var(--primary-text-color);
   font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .icon-social {
   display: flex;
-  margin-top: 16px;
+  align-items: center;
 }
 .icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  color: #afb1b8;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  /* border-radius: 50%; */
+  fill: #afb1b8;
 }
 .icon-list:not(:last-child) {
   margin-right: 10px;
 }
-.icon-list :hover {
-  color: #fff;
+.icon-list:hover,
+.icon-list:focus {
+  fill: #fff;
   background-color: #2196f3;
   border-radius: 50%;
 }
-.icon-list :focus {
-  color: #fff;
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-.icon-social-networks {
-  fill: #afb1b8;
-  /* margin-right: 10px; */
-  /* display: inline-flex;
-  text-align: center;
-  justify-content: center; */
-}
-/* .icon-social-networks :hover {
-  fill: #2196f3;
-  /* transform: scale(1.15); */
-}
-/* .icon-social-networks :focus {
-  fill: #2196f3;
-} */ */
 .regular-customers {
   background-color: var(--white-color);
   padding-top: 94px;
@@ -384,15 +346,24 @@ h2,
   color: #2196f3;
   border: 1px solid #2196f3;
 }
+
+/* FOOTER */
 .basement {
   background-color: var(--primary-background-color);
   text-decoration: none;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.basement .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contacts {
+  margin-right: 70px;
+}
 .logo-continuation-conclusion {
   color: var(--white-color);
-  font-family: Raleway, sans-serif;;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.38;
@@ -414,9 +385,6 @@ h2,
   line-height: 1.71;
 }
 .appeal {
-  display: flex;
-}
-.appeal-title {
   text-transform: uppercase;
 }
 .appeal-name {
@@ -424,6 +392,8 @@ h2,
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 .header-line {
   border-bottom: 1px solid #ececec;
@@ -436,6 +406,7 @@ h2,
   margin-left: auto;
   margin-right: auto;
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 .hero-portfolio {
   width: 1170px;
@@ -502,8 +473,10 @@ li {
 .image-portfolio:nth-child(3n) {
   margin-right: 0px;
 }
-.portfolio :hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-box :hover,
+.portfolio-box :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .name-title {
   color: var(--title-text-color);
