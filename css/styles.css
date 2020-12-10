@@ -58,7 +58,7 @@ nav {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 /* Чем мы занимаемся */
 .page-header {
@@ -259,6 +259,10 @@ nav {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+/* .box:nth-child(3n) {
+  margin-left: 0px;
+} */
+
 /* .content-box {
   /* padding: 5px 5px; */
 /* } */
@@ -287,6 +291,7 @@ nav {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: 0;
 }
 .icon-social {
   display: flex;
@@ -402,8 +407,8 @@ nav {
   border-bottom: 1px solid #ececec;
 }
 .portfolio-title {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .conteiner-portfolio {
   width: 1200px;
