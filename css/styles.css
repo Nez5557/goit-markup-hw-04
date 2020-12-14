@@ -46,6 +46,9 @@ html {
 body {
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
 }
 
 nav {
@@ -312,6 +315,9 @@ nav {
   justify-content: center;
   margin-bottom: 30px;
 }
+.icon-title {
+  margin-right: 10px;
+}
 .icon-list {
   display: flex;
   align-items: center;
@@ -407,14 +413,17 @@ nav {
 }
 .appeal {
   text-transform: uppercase;
+  width: 206px;
+  height: 80px;
+  align-items: left;
+  justify-content: left;
 }
 .appeal-name {
   color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 15px;
-  margin-left: 15px;
+  margin-bottom: 20px;
 }
 
 /* Портфолио */
