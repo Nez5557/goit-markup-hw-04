@@ -342,6 +342,7 @@ nav {
   background-color: var(--white-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: 0;
 }
 .clients-list {
   display: flex;
